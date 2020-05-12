@@ -1,25 +1,26 @@
 // In App.js in a new project
 
 import * as React from 'react';
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  SafeAreaView,
-  ScrollView,
-  Dimensions,
-  Image,
-} from 'react-native';
+//import {
+//  View,
+//  Text,
+//  TouchableOpacity,
+//  SafeAreaView,
+//  ScrollView,
+//  Dimensions,
+//  Image,
+//} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+//import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
-import {createStackNavigator} from '@react-navigation/stack';
+//import {createStackNavigator} from '@react-navigation/stack';
 import {createDrawerNavigator, DrawerItems} from '@react-navigation/drawer';
 import PerfilScreen from '../MyScreens/PerfilScreen';
 import HomeScreen from '../MyScreens/HomeScreen';
 import MyOrders from '../MyScreens/MyOrders';
 import DrawerContent from '../MyScreens/DrawerContent';
-import Icon from 'react-native-vector-icons/Ionicons';
+//import Icon from 'react-native-vector-icons/Ionicons';
+import LoginScreen from '../MyScreens/LoginScreen';
 
 //function PerfilScreen() {
 //  return (
@@ -53,6 +54,7 @@ function MyDrawer() {
         <Drawer.Screen name="Home" component={HomeScreen} />
         <Drawer.Screen name="Perfil" component={PerfilScreen} />
         <Drawer.Screen name="My Orders" component={MyOrders} />
+        <Drawer.Screen name="My Account" component={LoginScreen} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

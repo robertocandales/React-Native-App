@@ -45,9 +45,7 @@ const DrawerContent = props => {
                 }}
                 size={25}
               />
-              <Paragraph style={(style.paragraph)}>
-                Argentina
-              </Paragraph>
+              <Paragraph style={style.paragraph}>Argentina</Paragraph>
               {/*<Caption style={style.caption}>Products</Caption>*/}
             </View>
           </View>
@@ -97,10 +95,12 @@ const DrawerContent = props => {
               icon={({color, size}) => (
                 <Icon name="account-circle-outline" color={color} size={size} />
               )}
-              onPress={() => {}}
+              onPress={() => {
+                props.navigation.navigate('My Account');
+              }}
               label="My Account"
             />
-           
+
             <DrawerItem
               icon={({color, size}) => (
                 <Icon name="store" color={color} size={size} />
@@ -169,8 +169,7 @@ const style = StyleSheet.create({
   },
   paragraph: {
     fontWeight: 'bold',
-    marginLeft:15,
-    
+    marginLeft: 15,
   },
   drawerSection: {
     marginTop: 10,
