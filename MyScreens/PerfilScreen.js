@@ -21,7 +21,7 @@ const PerfilScreen = () => {
           <Text
             style={{marginTop: 10, fontSize: 20, marginLeft: 10}}
             key={index}>
-            -Name: {user.name} - Username: {user.username}
+            -Name: {user.name} - email: {user.email}
           </Text>
         ))}
       </View>

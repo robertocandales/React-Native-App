@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {
@@ -14,8 +15,11 @@ import {DrawerContentScrollView, DrawerItem} from '@react-navigation/drawer';
 
 //import Icon from '../node_modules/react-native-vector-icons/MaterialCommunityIcons';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {AuthContext} from '../component/Context';
 
 const DrawerContent = props => {
+  const {signOut} = React.useContext(AuthContext);
+
   const [isDarkTheme, setIsDarkTheme] = React.useState(false);
   const toggleTheme = () => {
     setIsDarkTheme(!isDarkTheme);
@@ -130,7 +134,9 @@ const DrawerContent = props => {
           icon={({color, size}) => (
             <Icon name="exit-to-app" color={color} size={size} />
           )}
-          onPress={() => {}}
+          onPress={() => {
+            signOut();
+          }}
           label="Sign Out"
         />
       </Drawer.Section>

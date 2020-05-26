@@ -1,6 +1,6 @@
 // In App.js in a new project
 
-import * as React from 'react';
+//import * as React from 'react';
 //import {
 //  View,
 //  Text,
@@ -10,17 +10,17 @@ import * as React from 'react';
 //  Dimensions,
 //  Image,
 //} from 'react-native';
-import {NavigationContainer} from '@react-navigation/native';
+//import {NavigationContainer} from '@react-navigation/native';
 //import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 //import {createStackNavigator} from '@react-navigation/stack';
-import {createDrawerNavigator, DrawerItems} from '@react-navigation/drawer';
-import PerfilScreen from '../MyScreens/PerfilScreen';
-import HomeScreen from '../MyScreens/HomeScreen';
-import MyOrders from '../MyScreens/MyOrders';
-import DrawerContent from '../MyScreens/DrawerContent';
+//import {createDrawerNavigator, DrawerItems} from '@react-navigation/drawer';
+//import PerfilScreen from '../MyScreens/PerfilScreen';
+//import HomeScreen from '../MyScreens/HomeScreen';
+//import MyOrders from '../MyScreens/MyOrders';
+//import DrawerContent from '../MyScreens/DrawerContent';
 //import Icon from 'react-native-vector-icons/Ionicons';
-import LoginScreen from '../MyScreens/LoginScreen';
+//import LoginScreen from '../MyScreens/LoginScreen';
 
 //function PerfilScreen() {
 //  return (
@@ -45,19 +45,19 @@ import LoginScreen from '../MyScreens/LoginScreen';
 
 //Header
 
-const Drawer = createDrawerNavigator();
+//const Drawer = createDrawerNavigator();
 
-function MyDrawer() {
-  return (
-    <NavigationContainer>
-      <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />}>
-        <Drawer.Screen name="Home" component={HomeScreen} />
-        <Drawer.Screen name="Perfil" component={PerfilScreen} />
-        <Drawer.Screen name="My Orders" component={MyOrders} />
-        <Drawer.Screen name="My Account" component={LoginScreen} />
-      </Drawer.Navigator>
-    </NavigationContainer>
-  );
-}
+//function MyDrawer() {
+//  return (
+//    <NavigationContainer>
+//      <Drawer.Navigator drawerContent={props => <DrawerContent {...props} />}>
+//        <Drawer.Screen name="Home" component={HomeScreen} />
+//        <Drawer.Screen name="Perfil" component={PerfilScreen} />
+//        <Drawer.Screen name="My Orders" component={MyOrders} />
+//        <Drawer.Screen name="My Account" component={LoginScreen} />
+//      </Drawer.Navigator>
+//    </NavigationContainer>
+//  );
+//}
 
-export default MyDrawer;
+//export default MyDrawer;
